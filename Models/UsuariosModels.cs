@@ -54,3 +54,18 @@ public class UsuariosModels{ //Grupo de acesso-> Listar
         public BusinessUnit? business_unit { get; set; }
         public Meta? meta { get; set; }
     }
+
+    //Detalhamento erro msg
+
+        public class Dadoerrousers
+    {
+        public int now { get; set; }
+        public string? ip { get; set; }
+    }
+
+    public class EndeUsers
+    {
+        public string? error { get; set; }
+        public Meta meta { get; set; }
+    }
+
