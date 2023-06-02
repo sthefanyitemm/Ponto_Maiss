@@ -1,34 +1,84 @@
 using System.Text.Json.Serialization;
 
-namespace PontoMais.Models; //classe de banco (model)
-    public class BancoModels{
-        [JsonPropertyName ("id")]
+namespace PontoMais.Models; //classe de banco (model) 
+    public class BancoModels{ //Banco de horas -> Listar
+        public int now { get; set; }
+        public string? ip { get; set; }
+        public int count { get; set; }
+    }
 
-        public string? Id {get;set;}
+    public class Root
+    {
+        public List<TimeBalanceEntry>? time_balance_entries { get; set; }
+        public Meta? meta { get; set; }
+    }
 
-        [JsonPropertyName ("date")]
+    public class TimeBalanceEntry
+    {
+        public int id { get; set; }
+        public string? date { get; set; }
+        public bool withdraw { get; set; }
+        public int amount { get; set; }
+        public int employee_id { get; set; }
+        public string? observation { get; set; }
+        public UpdatedBy? updated_by { get; set; }
+    }
 
-        public string? Date {get;set;}
+    public class UpdatedBy
+    {
+        public int id { get; set; }
+        public string? name { get; set; }
+    }
 
-        [JsonPropertyName ("withdraw")]
+// Detalhar
 
-        public bool withdraw{get;set;}
+ public class Meta
+    {
+        public int now { get; set; }
+        public string? ip { get; set; }
+    }
 
-        [JsonPropertyName ("amount")]
+    public class Rotas
+    {
+        public TimeBalanceEntry? time_balance_entry { get; set; }
+        public Meta? meta { get; set; }
+    }
 
-        public int amount{get;set;}
+    public class EntradaSaldoTempo
+    {
+        public int id { get; set; }
+        public int created_at { get; set; }
+        public int updated_at { get; set; }
+        public string? date { get; set; }
+        public bool withdraw { get; set; }
+        public int amount { get; set; }
+        public int signed_amount { get; set; }
+        public string? signed_amount_humanized { get; set; }
+        public int work_day_id { get; set; }
+        public int employee_id { get; set; }
+        public UpdatedBy? updated_by { get; set; }
+        public object? observation { get; set; }
+    }
 
-        [JsonPropertyName ("employed_id")]
+    public class Atualizacao
+    {
+        public int id { get; set; }
+        public string? name { get; set; }
+    }
 
-        public string? employed_id{get;set;}
+//Detalhar erro msg
 
-        [JsonPropertyName ("observation")]
+    public class DadoError
+    {
+        public int now { get; set; }
+        public string? ip { get; set; }
+    }
 
-        public string? observation{get;set;}
-
-       [JsonPropertyName("updated_by")]
-        public string? name{get;set;}
-        public int id {get;set;}
+    public class EndError
+    {
+        public string? error { get; set; }
+        public Meta? meta { get; set; }
+    }
        
-    }  
+    
     
