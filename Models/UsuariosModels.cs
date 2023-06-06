@@ -66,6 +66,6 @@ public class UsuariosModels{ //Grupo de acesso-> Listar
     public class EndeUsers
     {
         public string? error { get; set; }
-        public Meta meta { get; set; }
+        public Meta? meta { get; set; }
     }
 

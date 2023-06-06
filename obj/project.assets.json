@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TI ITEMM\\Pontomais\\PontoMais\\PontoMais.csproj",
+      "projectUniqueName": "C:\\Users\\TI ITEMM\\OneDrive - INSTITUTO TECNICO EDUCACIONAL MIRIAN MENCHINI\\Área de Trabalho\\PontoMais\\PontoMais.csproj",
       "projectName": "PontoMais",
-      "projectPath": "C:\\Users\\TI ITEMM\\Pontomais\\PontoMais\\PontoMais.csproj",
+      "projectPath": "C:\\Users\\TI ITEMM\\OneDrive - INSTITUTO TECNICO EDUCACIONAL MIRIAN MENCHINI\\Área de Trabalho\\PontoMais\\PontoMais.csproj",
       "packagesPath": "C:\\Users\\TI ITEMM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TI ITEMM\\Pontomais\\PontoMais\\obj\\",
+      "outputPath": "C:\\Users\\TI ITEMM\\OneDrive - INSTITUTO TECNICO EDUCACIONAL MIRIAN MENCHINI\\Área de Trabalho\\PontoMais\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TI ITEMM\\AppData\\Roaming\\NuGet\\NuGet.Config",
